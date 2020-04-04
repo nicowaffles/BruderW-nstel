@@ -1,3 +1,4 @@
+  
 import discord
 from discord.ext import commands
 import random
@@ -11,7 +12,6 @@ bot_key = os.getenv("KEY")
 
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
-
 There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='?', description=description)
 
@@ -69,6 +69,125 @@ class Music(commands.Cog):
     async def kot(self, ctx):
         await self.play(ctx, 'sounds/kot.mp3')
 
+    @commands.command()
+    async def whoop(self, ctx):
+        await self.play(ctx, 'sounds/whoopwhoop.mp3')
+
+    @commands.command()
+    async def tobias(self, ctx):
+        await self.play(ctx, 'sounds/washatdertobiasgemacht.mp3')
+
+    @commands.command()
+    async def cola(self, ctx):
+        await self.play(ctx, 'sounds/meinecola.mp3')
+
+    @commands.command()
+    async def controller(self, ctx):
+        await self.play(ctx, 'sounds/meincontroller.mp3')
+
+    @commands.command()
+    async def meinkind(self, ctx):
+        await self.play(ctx, 'sounds/meinkind.mp3')
+
+    @commands.command()
+    async def normalermensch(self, ctx):
+        await self.play(ctx, 'sounds/normalermensch.mp3')
+
+    @commands.command()
+    async def meinruf(self, ctx):
+        await self.play(ctx, 'sounds/meinruf.mp3')
+
+    @commands.command()
+    async def gehirnschaden(self, ctx):
+        await self.play(ctx, 'sounds/postanabolegehirnschädigungen.mp3')
+
+    @commands.command()
+    async def tagesschau(self, ctx):
+        await self.play(ctx, 'sounds/tagesschau.mp3')
+
+    @commands.command()
+    async def thotdetected(self, ctx):
+        await self.play(ctx, 'sounds/thotdetected.mp3')
+
+    @commands.command()
+    async def tiefkuehlpommes(self, ctx):
+        await self.play(ctx, 'sounds/tiefkuehlpommes.mp3')
+
+    commands.command()
+    async def aeugh(self, ctx):
+        await self.play(ctx, 'sounds/aeugh.mp3')
+
+    commands.command()
+    async def ahfuck(self, ctx):
+        await self.play(ctx, 'sounds/ahfuckicantbelieveyouvedonethis.mp3')
+
+    commands.command()
+    async def coronawarus(self, ctx):
+        await self.play(ctx, 'sounds/coronawarus.mp3')
+
+    commands.command()
+    async def dannbinichdersohneinerhure(self, ctx):
+        await self.play(ctx, 'sounds/dannbinichdersohneinerhure.mp3')
+
+    commands.command()
+    async def freiervogel(self, ctx):
+        await self.play(ctx, 'sounds/freiervogel.mp3')
+
+    commands.command()
+    async def hska(self, ctx):
+        await self.play(ctx, 'sounds/hska.mp3')
+
+    commands.command()
+    async def iamnotdrunk(self, ctx):
+        await self.play(ctx, 'sounds/iamnotdrunk.mp3')
+
+    commands.command()
+    async def inmeinemchat(self, ctx):
+        await self.play(ctx, 'sounds/inmeinemchat.mp3')
+
+    commands.command()
+    async def maddin(self, ctx):
+        await self.play(ctx, 'sounds/jahalloescheee.mp3')
+
+    commands.command()
+    async def karsten(self, ctx):
+        await self.play(ctx, 'sounds/karsten.mp3')
+
+    commands.command()
+    async def machdeinarschzu(self, ctx):
+        await self.play(ctx, 'sounds/machdeinarschzu.mp3')
+
+    commands.command()
+    async def disappointment(self, ctx):
+        await self.play(ctx, 'sounds/mydisappointmentisimmeasurable.mp3')
+
+    commands.command()
+    async def gzuz(self, ctx):
+        gzuz_list = [
+        "gzuz_brrrt.mp3", 
+        "gzuz_drueckdrueck.mp3",
+        "gzuz_drueckedasgaspedal.mp3",
+        "gzuz_fuenfeuroweg.mp3",
+        "gzuz_halluzinieren.mp3",
+        "gzuz_hautfarbeovomaltine.mp3",
+        "gzuz_holmireinenrunter.mp3",
+        "gzuz_ichsaufmireinrein.mp3",
+        "gzuz_keinekooperation.mp3", 
+        "gzuz_krachindernacht.mp3",
+        "gzuz_krachindernachtohnevacht.mp3",
+        "gzuz_krankenwagen.mp3",
+        "gzuz_neandertaler.mp3",
+        # spanish inquisition
+        "gzuz_optimalfall.mp3",
+        "gzuz_partyistkomplett.mp3",
+        "gzuz_seximmercedes.mp3",
+        "gzuz_warumbistdunurso.mp3",
+        "gzuz_washastdugedacht.mp3",
+        "gzuz_whoopwhoop.mp3",
+        "gzuz_wirblubberblubbern.mp3",
+        "gzuz_zehneuroweg.mp3",
+        ]
+        await self.play(ctx, random.choice(gzuz_list))
 
     @commands.command()
     async def zitat(self, ctx):
